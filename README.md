@@ -54,5 +54,5 @@ Lembre-se:
 ## Observações
 
 * Seria interessante clocar um botão de "ascendente" ou "descendente" na ordem dos select
-* Seria interessante um visual um pouco mais trabalhado
-*
+* Seria interessante um visual um pouco mais trabalhado e informativo
+* Teste feito entre aprox. as 11h e as 15h do dia 15/03/2017
