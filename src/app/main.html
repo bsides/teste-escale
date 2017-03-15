@@ -16,13 +16,28 @@
       <option value="" ng-if="!filterSelect">Selecione...</option>
     </select>
 </p>
-<ul>
-  <li ng-repeat="starred in stars | orderBy: orderSelect | filter: filterSelect | filter: otherFilter">
-    <p>ID: {{ starred.id }}</p>
-    <p>Nome: {{ starred.name }}</p>
-    <p>Descrição: {{ starred.description }}</p>
-    <p>Linguagem: {{ starred.language }}</p>
-    <p>Stars: {{ starred.stargazers_count }}</p>
-    <p>Open issues: {{ starred.open_issues_count }}</p>
-  </li>
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col" ng-repeat="starred in stars | orderBy: orderSelect | filter: filterSelect" style="min-width: 30%">
+      <div class="card">
+        <div class="hidden-xs-up">ID: {{ starred.id }}</div>
+        <div class="card-header">
+          <h3><a href="{{ starred.home_url }}" target="_blank">{{ starred.name }}</a></h3>
+        </div>
+        <div class="card-block">
+          <img src="{{ starred.owner.avatar_url }}" class="rounded float-left img-thumbnail" alt="Avatar de {{ starred.owner.login }}">
+          <p class="card-text">
+            <strong>{{ starred.name }}</strong><br>
+            Por <a href="{{ starred.owner.home_url }}" target="_blank">{{ starred.owner.login }}</a>
+          </p>
+          <p class="card-text card-description">{{ starred.description }}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item justify-content-between">Linguagem <span class="badge badge-default badge-pill">{{ starred.language }}</span></li>
+          <li class="list-group-item justify-content-between">Stars: <span class="badge badge-default badge-pill">{{ starred.stargazers_count }}</span></li>
+          <li class="list-group-item justify-content-between">Open issues: <span class="badge badge-default badge-pill">{{ starred.open_issues_count }}</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

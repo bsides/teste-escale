@@ -1,3 +1,18 @@
 body {
-  background-color: lightgrey;
+  padding: 20px;
+}
+h1 {
+  margin-bottom: 40px;
+}
+.col {
+  margin-bottom: 30px;
+}
+.card-block {
+  img {
+    max-width: 64px;
+    margin-right: 12px;
+  }
+  .card-description {
+    padding-top: 12px;
+  }
 }
