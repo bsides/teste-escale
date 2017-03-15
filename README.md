@@ -2,10 +2,22 @@
 
 Teste requerido pela Escale para avaliação de habilidades.
 
+## TL;DR
+
+`npm install`
+`bower install`
+`gulp serve`
+
+## Requerimentos
+
+* NodeJS com NPM: [link](https://nodejs.org/)
+* Bower: [link](https://bower.io/)
+
 ## Instalação
 
-* Clone o repositório
-* `npm install`
+* Clone o repositório `git clone git@github.com:bsides/teste-escale.git` ou `git clone https://github.com/bsides/teste-escale.git`
+* Instale os componentes do bower `bower install`
+* Instale os pacotes npm `npm install`
 
 ### Rodando localmente
 
@@ -38,3 +50,9 @@ Lembre-se:
 ```
 
 ![](readme/card.png)
+
+## Observações
+
+* Seria interessante clocar um botão de "ascendente" ou "descendente" na ordem dos select
+* Seria interessante um visual um pouco mais trabalhado
+*

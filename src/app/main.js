@@ -8,7 +8,7 @@ testEscale.component('app', {
 testEscale.factory('GHAPI', function($http, $q) {
   return {
     getStars: function() {
-      return $http.get('https://api.github.com/users/wilfernandesjr/starred?access_token=e3151306b0b60af40dac11a5903ff09141c84176').then(function(response) {
+      return $http.get('https://api.github.com/users/wilfernandesjr/starred').then(function(response) {
         return response.data
       });
     },
