@@ -19,7 +19,6 @@ Teste requerido pela Escale para avaliação de habilidades.
 ## Funcionalidades
 
 * Exibir uma lista de cards com todos os repositórios que `user` deu `star`;
-* Listar todos os repos de `user` com `start`;
 * Ordenar alfabeticamente pelo nome do repositório, quantidade de stars e open issues via Select;
 * Filtrar por linguagem (ex: repos em JavaScript)
 * `user` = `wilfernandesjr`
