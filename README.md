@@ -4,9 +4,10 @@ Teste requerido pela Escale para avaliação de habilidades.
 
 ## TL;DR
 
-`npm install`
-`bower install`
-`gulp serve`
+* `npm install`
+* `bower install`
+* `gulp serve`
+* Abra o navegador em `localhost:3000`
 
 ## Requerimentos
 
@@ -22,11 +23,13 @@ Teste requerido pela Escale para avaliação de habilidades.
 ### Rodando localmente
 
 * `npm run serve` ou `gulp serve`
+* Aponte o navegador para `localhost:3000`
 
 ### Rodando para produção
 
 * Fazendo build apenas: `npm run build` ou `gulp build`
 * Rodando servidor local com esse build: `npm run serve:dist` ou `gulp serve:dist`
+* Aponte o navegador para `localhost:3000`
 
 ## Funcionalidades
 
