@@ -1,2 +1,12 @@
-<h1>{{ $ctrl.main }}</h1>
-<h1>{{ $ctrl.hello }}</h1>
+<h1>Teste Escale</h1>
+
+<ul>
+  <li ng-repeat="starred in stars">
+    <p>{{ starred.name }}</p>
+    <p>{{ starred.description }}</p>
+    <p>{{ starred.language }}</p>
+    <p>{{ starred.stargazers_count }}</p>
+    <p>{{ starred.open_issues_count }}</p>
+  </li>
+</ul>
+{{stars}}
