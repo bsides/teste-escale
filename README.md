@@ -22,6 +22,7 @@ Teste requerido pela Escale para avaliação de habilidades.
 * Listar todos os repos de `user` com `start`;
 * Ordenar alfabeticamente pelo nome do repositório, quantidade de stars e open issues via Select;
 * Filtrar por linguagem (ex: repos em JavaScript)
+* `user` = `wilfernandesjr`
 
 ## Texto na íntegra:
 
@@ -37,4 +38,4 @@ Lembre-se:
 - qq outra informação que julgar necessario;
 ```
 
-![](src/app/assets/images/card.png)
+![](readme/card.png)
