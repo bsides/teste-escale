@@ -1,12 +1,28 @@
 <h1>Teste Escale</h1>
 
+
+<p>
+  Ordenar por:
+    <select name="order" ng-model="orderSelect">
+      <option value="" ng-if="!orderSelect">Selecione...</option>
+      <option value="name">Nome</option>
+      <option value="stargazers_count">Stars</option>
+      <option value="open_issues_count">Open issues</option>
+    </select>
+</p>
+<p>
+  Filtrar por:
+    <select name="filter" ng-model="filterSelect" ng-options="item.language as item.language for item in stars | unique: 'language'">
+      <option value="" ng-if="!filterSelect">Selecione...</option>
+    </select>
+</p>
 <ul>
-  <li ng-repeat="starred in stars">
-    <p>{{ starred.name }}</p>
-    <p>{{ starred.description }}</p>
-    <p>{{ starred.language }}</p>
-    <p>{{ starred.stargazers_count }}</p>
-    <p>{{ starred.open_issues_count }}</p>
+  <li ng-repeat="starred in stars | orderBy: orderSelect | filter: filterSelect | filter: otherFilter">
+    <p>ID: {{ starred.id }}</p>
+    <p>Nome: {{ starred.name }}</p>
+    <p>Descrição: {{ starred.description }}</p>
+    <p>Linguagem: {{ starred.language }}</p>
+    <p>Stars: {{ starred.stargazers_count }}</p>
+    <p>Open issues: {{ starred.open_issues_count }}</p>
   </li>
 </ul>
-{{stars}}
